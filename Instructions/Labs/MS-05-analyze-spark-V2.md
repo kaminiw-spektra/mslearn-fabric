@@ -12,7 +12,7 @@ In this exercise, you will help Contoso create a Lakehouse, load sales order fil
 
 In this exercise, you will use **Apache Spark and PySpark** in Microsoft Fabric to analyze and process sales order data. You will create a Lakehouse and notebook, load and structure CSV data using schemas, explore and aggregate data with Spark dataframes, transform and save data in optimized formats, create Delta tables, query data using SQL, and generate visualizations using Spark charts and Python visualization libraries. This hands-on experience will help you understand how to leverage Spark's distributed computing capabilities for large-scale data analysis and gain insights from sales data in Microsoft Fabric.
 
-## 🎯 Objective
+## 🎯 Objectives
 
 In this exercise, you will be able to complete the following tasks:
 

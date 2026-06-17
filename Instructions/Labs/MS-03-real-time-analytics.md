@@ -78,10 +78,10 @@ In this task, Contoso needs to set up a KQL database to analyze sales data. You 
         ![01](./Images/e3t1s7.1.png)
        
    - **Summary:**
+   
       - Review the preview of the table and close the wizard.
 
         ![01](./Images/e3t1s7.2.png)
-
 
 ## Task 2: Use KQL to query the sales table
 

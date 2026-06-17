@@ -51,7 +51,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
     - **Privacy level: (6)** None
     - Click **Next (7)**
 
-      ![Get data](./Images/p7t1p5.png)
+      ![Get data](./Images/p7t1p5-n.png)
 
 1. Preview the file data, and then click **Create** the data source. The Power Query editor shows the data source and an initial set of query steps to format the data, as shown below:
 
@@ -101,7 +101,7 @@ In this task, you’ll add a data destination for the Dataflow to determine wher
 
    >**Note:** If this option is greyed out, you may already have a data destination set. Check the data destination at the bottom of the Query settings pane on the right side of the Power Query editor. If a destination is already set, you can change it using the gear.
 
-1. In the **Connect to data destination** dialog box, make sure **Create a new connection (1)** is selected and the **<inject key="AzureAdUserEmail"></inject> (2)** account is signed in. Click on **Next (3)**.
+1. In the **Connect to data destination** dialog box, make sure **Create new connection (1)** is selected and the **<inject key="AzureAdUserEmail"></inject> (2)** account is signed in. Click on **Next (3)**.
 
    ![](./Images/p7t2p3.png)
 

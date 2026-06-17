@@ -398,7 +398,7 @@ In this task, you'll create a visual query in Power BI using Power Query. Start 
 
     ![](./Images/p1t7p1.png)
 
-1. In the Lakehouse, navigate to **Schemas**, then to **dbo**, expand the **tables** folder and select the **sales** table. In the sales table, click on **Ellipsis &#8230; (1)** and select **Insert into canvas (2)**. It is in the new visual query editor pane that opens to create a Power Query. 
+1. In the Lakehouse, navigate to **Schemas**, then to **dbo**, expand the **Tables** folder and select the **sales** table. In the sales table, click on **Ellipsis &#8230; (1)** and select **Insert into canvas (2)**. It is in the new visual query editor pane that opens to create a Power Query. 
 
     ![](./Images/p1t7p2.png)
 
@@ -448,7 +448,7 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
     ![](./Images/e1p2t8p3.png)
 
-4. Click on **Open(1)** to view the table in semantic model.
+4. Click on **Open (1)** to view the table in semantic model.
 
    ![](./Images/01/E1T8S4.png)
 
