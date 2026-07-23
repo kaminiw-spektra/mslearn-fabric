@@ -57,12 +57,12 @@ In this task, you will assign yourself the Fabric Administrator role in Microsof
    https://app.fabric.microsoft.com
    ```
 
-    - **Username:** `<inject key="AzureAdUserEmail"></inject>`
-    - **Password:** `<inject key="AzureAdUserPassword"></inject>`
+    - **Email/Username:** <inject key="AzureAdUserEmail" enableCopy="true"/>
+    - **Password:** <inject key="AzureAdUserPassword" enableCopy="true"/>
 
    >**Note**: In case a sign-up page asks for a phone number, you can enter a dummy phone number to proceed.
 
-1. In the top-right corner, open the **Account manager (1)** profile flyout and click **Start trial (2)** to activate the free per-user Fabric trial, which grants the authoring license required to create semantic models later in this exercise.
+1. Select the **Profile (1)** icon, expand the **Start trial (2)** menu, and then select **Fabric and Power BI (3)**.
 
     ![](./Images/IQ34.png)
 
@@ -78,7 +78,7 @@ In this task, you will assign yourself the Fabric Administrator role in Microsof
 
     ![](./Images/IQ37.png)
 
-    > **Note:** The per-user trial provides the Power BI authoring license for this lab. You will still assign the workspace to the pre-provisioned **fabric<inject key="DeploymentID" enableCopy="false"/>** capacity in the next steps — the trial is for the user license, not for the workspace capacity.
+    > **Note:** The per-user trial provides the Power BI authoring license for this lab. You will still assign the workspace to the pre-provisioned **fabric<inject key="DeploymentID" enableCopy="false"/>** capacity in the next steps the trial is for the user license, not for the workspace capacity.
 
 1. Select **Workspaces (1)** and click on **+ New workspace (2)**.
 
@@ -93,8 +93,6 @@ In this task, you will assign yourself the Fabric Administrator role in Microsof
     - **Advanced:** Expand it and under **License mode**, select **Fabric (1)**, under **Capacity** select available **fabric<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region"></inject> (2)** and click on **Apply (3)** to create and open the workspace.
 
         ![advanced-and-apply](./Images/IQ39.png)
-
-    > **Note:** The pre-provisioned **fabric<inject key="DeploymentID" enableCopy="false"/>** capacity is a paid Fabric (F) SKU. The Copilot, ontology, and Data Agent features used in this module require a paid F2 or higher capacity, so make sure your workspace is assigned to this capacity and not to a trial capacity.
 
 1. Confirm that the new workspace has opened successfully **(1)** and verify that the **+ New item (2)** option is available.
 
@@ -147,9 +145,13 @@ In this task, you will create a Fabric Data Warehouse and populate it with a ret
 
     ![](./Images/IQ30.png)
 
-1. Use the **Refresh** button on the toolbar to refresh the view. Then, in the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
+1. In the **Explorer** pane, expand **Schemas** > **dbo** > **Tables** and verify that the **DimProduct** table has been created.
 
     ![](./Images/IQ31.png)
+
+    > **Note:** If you do not see the **DimProduct** table under **Tables**, select the **More options (1)** menu next to **Schemas** and then select **Refresh (2)**.
+
+   ![](./Images/IQ200.png)
 
 1. On the **Home** menu tab, use the **New SQL Query (1)** drop-down button and from the menu select **New SQL Query (2)** to create a new query, and enter the following INSERT statement:
 
@@ -224,7 +226,7 @@ In this task, you will create a semantic model from the data warehouse tables, s
 
     > **Note:** If the Editing option is unavailable, ensure that **Users can edit data models in the Power BI service (preview)** is enabled in the workspace settings.
 
-1. On the **Home** ribbon, select **Manage relationships**, then click **+ New relationship** and create the first relationship with the following details.
+1. Drag the **ProductKey** field from the **FactSalesOrder** table and drop it on the **ProductKey** field in the **DimProduct** table. Then confirm the following relationship details.
 
     - From table: **FactSalesOrder (1)**
     - Column: **ProductKey (2)**
@@ -238,7 +240,7 @@ In this task, you will create a semantic model from the data warehouse tables, s
 
         ![](./Images/IQ46.png)
 
-1. Repeat the process using **Manage relationships** > **+ New relationship** to create many-to-one relationships between the following tables and click on **Save** after each.
+1. Repeat the process to create many-to-one relationships between the following tables and click on Save after each.each.
 
     - **FactSalesOrder.CustomerKey** &#8594; **DimCustomer.CustomerKey**
 
@@ -248,11 +250,11 @@ In this task, you will create a semantic model from the data warehouse tables, s
 
         ![](./Images/e2t3p9.png)
 
-    > **Note:** You can also create the relationships from the ribbon by selecting **Manage relationships** > **+ New relationship** and entering the same details — this is the flow used in the current Microsoft ontology tutorial. Both approaches produce the same result.
+    > **Note:** You can also create the relationships from the ribbon by selecting **Manage relationships** > **+ New relationship** and entering the same details this is the flow used in the current Microsoft ontology tutorial. Both approaches produce the same result.
 
 1. When all of the relationships have been defined, the model should look like this:
 
-    ![](./Images/IQ45.png)
+    ![](./Images/IQ202.png)
 
 ## Task 4: Enable the Fabric IQ preview features and publish the ontology
 

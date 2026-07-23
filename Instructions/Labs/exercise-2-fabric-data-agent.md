@@ -25,8 +25,8 @@ In this task, you will create a new lakehouse in the shared workspace and upload
 
 1. Open a browser and go to <https://app.fabric.microsoft.com>. Sign in by using the following credentials:
 
-    - **Username:** `<inject key="AzureAdUserEmail"></inject>`
-    - **Password:** `<inject key="AzureAdUserPassword"></inject>`
+    - **Email/Username:** <inject key="AzureAdUserEmail" enableCopy="true"/>
+    - **Password:** <inject key="AzureAdUserPassword" enableCopy="true"/>
 
 1. From the left pane, select the **fabric-<inject key="DeploymentID" enableCopy="false"/>** workspace, click on **+ New item (3)** to create a new lakehouse.
 
