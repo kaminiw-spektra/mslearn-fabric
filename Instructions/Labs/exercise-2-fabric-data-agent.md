@@ -42,7 +42,7 @@ In this task, you will create a new lakehouse in the shared workspace and upload
 
 1. In the left pane, go back to your Lakehouse. In the **Explorer** pane, hover and open the **Ellipsis (…) (1)** menu next to the **Files** node, then choose **Upload (2)** and select **Upload files (3)**.
 
-    ![](./Images/IQ74.png)
+    ![](./Images/IQ208.png)
 
 1. In the **Upload files** section, click on the **folder (1)** icon.
 
@@ -104,7 +104,7 @@ In this task, you will create a notebook, attach it to the **Lakehouse_<inject k
 
 1. Select the lakehouse named **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Add (2)**.
 
-    ![](./Images/IQ84.png)
+    ![](./Images/IQ210.png)
 
 1. Once after connecting to the existing lakehouse, you should be able to see the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** under **Data Items**.
 
@@ -171,6 +171,8 @@ In this task, you will train two classification models Logistic Regression and D
 
 1. The code creates an MLflow experiment named `experiment-churn`. Your models will be tracked in this experiment.
 
+    ![](./Images/IQ117.png)
+
 1. Add a new code cell to the notebook, enter the following code in it, and run it:
 
     ```python
@@ -226,9 +228,9 @@ In this task, you will explore the MLflow experiment runs, compare model perform
 
 1. The **output** should resemble the following image:
 
-    ![Screenshot of the plotted evaluation metrics.](./Images/IQ116.png)
+    ![Screenshot of the plotted evaluation metrics.](./Images/IQ211.png)
 
-1. In the left pane, navigate to your **fabric-<inject key="DeploymentID" enableCopy="false"/> **. You will see the **experiment-churn** Experiment created.
+1. In the left pane, navigate to your **fabric-<inject key="DeploymentID" enableCopy="false"/>**. You will see the **experiment-churn** Experiment created.
 
     ![](./Images/IQ117.png)
 
@@ -381,7 +383,9 @@ In this task, you will create a Fabric Data Agent grounded in the **churn_predic
 
 1. Select **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and **Add (2)** it as the agent's data source.
 
-    ![](./Images/IQ84.png)
+    ![](./Images/IQ210.png)
+
+    >**Note :** 
 
 1. In the **Explorer** pane, on the **Data (1)** tab, expand **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> > Schemas > dbo > Tables** and select the checkbox next to **churn_predictions (2)**, leaving all other objects unselected. This scopes the agent to the prediction table only.
 

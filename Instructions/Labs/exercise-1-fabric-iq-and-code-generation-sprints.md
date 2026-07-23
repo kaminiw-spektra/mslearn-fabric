@@ -316,11 +316,11 @@ In this task, you will enable the tenant settings required for the Fabric IQ pre
 
 1. After generation completes, the ontology editor opens. In the **Explorer** pane, expand **Entity Types (1)** and confirm the four entity types generated from your semantic model are listed **DimProduct**, **DimCustomer**, **DimDate**, and **FactSalesOrder**.
 
-    ![](./Images/IQ45.png)
+    ![](./Images/IQ203.png)
 
 1. Select **DimCustomer (1)** from the entity type list. The graph canvas displays the entity and its connections confirm the **FactSalesOrder_has_DimCustomer (2)** relationship appears, showing that the relationship you defined in Task 3 carried through into the ontology. Selecting **DimProduct** or **DimDate** shows their relationships to **FactSalesOrder** in the same way.
 
-    ![](./Images/CU-ontology-graph.png)
+    ![](./Images/IQ204.png)
 
     > **Note:** Selecting an entity type also surfaces the **+ Add relationship** and **View Entity Type details** options in the toolbar. These allow you to extend the ontology manually no changes are needed for this lab.
 
@@ -330,9 +330,7 @@ In this task, you will enable the tenant settings required for the Fabric IQ pre
 
     > **Note:** The ontology automatically creates supporting items in the workspace a graph item and one or more lakehouses prefixed with **DWInsightsOntology_**. These store the ontology's data bindings. Do not delete or modify them.
 
-    ![](./Images/IQ117.png)
-
-    ![](./Images/IQ57.png)
+    ![](./Images/IQ205.png)
 
     > **Note:** After you click **Create**, a **Generating Ontology** screen appears while Fabric builds the entity types and processes the data bindings. This one-time setup typically completes in a few minutes wait on the page, it updates automatically when generation finishes.
 
@@ -344,9 +342,11 @@ In this task, you will open the **Data Warehouse-<inject key="DeploymentID" enab
 
 1. In the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, open the **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** semantic model.
 
-    ![](./Images/IQ150.png)
+    ![](./Images/IQ206.png)
 
-1. The semantic model opens in the model editing view, showing the four tables and their relationships. At the bottom-left of the window, switch from **Model view** to **DAX query view (1)**.
+    ![](./Images/IQ207.png)
+
+1. The semantic model opens in the model editing view, showing the four tables and their relationships. At the bottom-left of the window, switch from **Model view** to **DAX query view**.
 
     ![](./Images/IQ58.png)
 
@@ -443,11 +443,6 @@ In this task, you will open the **Data Warehouse-<inject key="DeploymentID" enab
 ## Task 6: Create a lakehouse and upload files
 
 In this task, you will create a lakehouse to store the sales order data and upload the orders folder from the lab files.
-
-1. Open a browser and go to <https://app.fabric.microsoft.com>. Sign in by using the following credentials:
-
-    - **Username:** `<inject key="AzureAdUserEmail"></inject>`
-    - **Password:** `<inject key="AzureAdUserPassword"></inject>`
 
 1. Navigate to your workspace **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)**, click on **+ New item (2)** to create a new warehouse.
 

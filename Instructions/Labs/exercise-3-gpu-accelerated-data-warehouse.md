@@ -17,7 +17,7 @@ You will be able to complete the following tasks:
 - Task 1: Review the GPU query acceleration capability and workspace Data Warehouse settings
 - Task 2: Run an analytical query and measure performance with query insights
 
-## Task 1: Review the GPU query acceleration capability and workspace Data Warehouse settings
+## Task 1: Review the GPU query acceleration capability and workspace Data Warehouse settings [Read Only]
 
 In this task, you will sign in to Microsoft Fabric and review the workspace-level Data Warehouse settings the surface where GPU query acceleration is managed. Query acceleration is currently an opt-in early access preview that Microsoft is rolling out tenant by tenant, so you will confirm what your environment exposes today and learn where the capability appears once a tenant is onboarded.
 
@@ -28,15 +28,15 @@ In this task, you will sign in to Microsoft Fabric and review the workspace-leve
 
 1. From the left pane, select the **fabric-<inject key="DeploymentID" enableCopy="false"/>** workspace.
 
-    ![](./Images/.png)
+    ![](./Images/IQ206.png)
 
-1. In the **fabric-<inject key="DeploymentID" enableCopy="false"/>** workspace, select **Workspace settings** from the toolbar.
+1. In the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, select **Workspace settings (2)** from the toolbar.
 
     ![](./Images/IQ149.png)
 
-1. In the workspace settings pane, select **Data Warehouse (1)** and review the available settings **(2)**.
+1. In the workspace settings pane, select **Data Warehouse** and review the available settings.
 
-    ![](./Images/CU-ws-dw-settings.png)
+    ![](./Images/IQ212.png)
 
 1. Observe the settings listed in the **Data Warehouse** section, such as **Collations** and **New metadata sync** the exact list varies as Fabric evolves. These standard settings govern string handling and SQL endpoint synchronization; none of them relates to GPU. This section is, however, where **Query acceleration (Preview)** appears as an additional toggle on tenants that have been onboarded to the GPU early access program.
 
