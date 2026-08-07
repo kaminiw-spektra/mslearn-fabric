@@ -355,4 +355,4 @@ In this exercise, you:
 
 ### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
-   ![05](./Images/next-page-1208.png)
+   ![](./Images/next-page_04.png)

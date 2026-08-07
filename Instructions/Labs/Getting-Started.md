@@ -14,7 +14,7 @@ In this hands-on lab, you will use **Microsoft Fabric** to work with enterprise-
 
 By the end of this lab, you will gain practical experience in building and managing modern analytics workflows that support scalable and efficient data-driven operations.
 
-## 🎯 Objective
+## 🎯 Lab Objectives
 
 This lab is designed to equip participants with hands-on experience in creating a workspace to manage data, ingesting it via pipelines, analyzing it in a data warehouse, performing real-time analytics, training models using notebooks, leveraging Apache Spark for complex analysis, and designing advanced data transformations with Dataflow Gen2.
 
@@ -93,11 +93,17 @@ Feel free to **Start, Stop, or Restart** your virtual machine as needed from the
 
    ![](./Images/manage-vm.png)
 
-## Lab Guide Zoom In/Zoom Out Options
+## Lab Guide Zoom In/Zoom Out 
 
 To adjust the zoom level for the environment page, click the A↕ icon located next to the timer in the lab environment.
 
    ![](./Images/zoomintab.png)
+
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+   ![](./Images/resize.png)
 
 ## Let's Get Started with Power BI Portal
 
