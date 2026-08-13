@@ -81,7 +81,7 @@ In this task, you will create a Dataflow (Gen2) to efficiently ingest and transf
 
    ![](./Images/06/E6T1S12-2005.png)
 
-   ![](./Images/06/E6T1S12a-2005.png)
+   ![](./Images/E6T1S12a-2005.png)
 
 1. On the **Delete "orders"?** pop-up, click **Delete**.
    
@@ -166,6 +166,8 @@ In this task, you’ll add a dataflow to a pipeline to streamline the data proce
    ![](./Images/p7t3p7.png)
 
 1. From the left navigation pane, select **fabric-<inject key="DeploymentID" enableCopy="false"/>** then select the **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** Lakehouse to open it.
+
+   ![](./Images/img_008.png)
 
 1. Expand the **Tables** section and verify that the **orders** table is created by your dataflow.
 

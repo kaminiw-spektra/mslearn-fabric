@@ -29,13 +29,19 @@ In this exercise, you will be able to complete the following tasks:
 
 In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
 
-1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Start trial (2)**.
+1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Trial_Section_Button_section (2)**.
 
     ![Account-manager-start](./Images/01/E1T1S1.png)
 
 1. On the **Activate your 60-day free Fabric trial capacity** dialog box, click **Activate**.  
 
     ![](./Images/01/E1T1S2-2005.png)
+
+    > **Note:**
+    > If the **Your Power BI trial is active** dialog appears instead of the Fabric trial dialog, this means a Fabric trial was not started. Select **Got it** to dismiss the dialog and continue with the lab.
+    >
+    >   ![](./Images/img_005.png)
+    >
 
 1. On the **Successfully upgraded to Microsoft Fabric** pop-up, click **OK**.
 
@@ -436,7 +442,7 @@ In this task, you'll create a report to visualize your data findings. You'll sel
     
     ![](./Images/e1p2t8p1.png)
 
-2. On the New Smantic Model window, enter the following details and click on **Confirm (4)**:
+1. On the New Smantic Model window, enter the following details and click on **Confirm (4)**:
 
     - Direct Lake semantic model name: **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)**
     - Storage mode: **Direct Lake on SQL (2)**
@@ -444,23 +450,27 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
         ![](./Images/01/E1T8S2-2005.png)
 
-3. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace from the left pane. Select recently created semantic model named as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**
+1. Go back to the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace from the left pane. Select recently created semantic model named as **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (2)**
 
     ![](./Images/e1p2t8p3.png)
 
-4. Click on **Open (1)** to view the table in semantic model.
+1. Click on **Open (1)** to view the table in semantic model.
 
    ![](./Images/01/E1T8S4.png)
 
-5. Once the model is opened, the **sales** table will appear.
+1. Once the model is opened, the **sales** table will appear.
 
    ![](./Images/E1T8S5.png)
 
-6. Switch to editing mode. In the top menu bar, select the **File (1)** tab. Then select **Create new report (2)**.
+1. Select the **Viewing (1)** dropdown, then select **Editing (2)** to enable edit mode.
+
+    ![](./Images/img_006.png)
+
+1. select the **File (1)** tab. Then select **Create new report (2)**.
 
     ![](./Images/p1t8p5.png)
 
-7. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
+1. In the **Data** pane on the right, expand the **sales** table. Then select the following fields:
    
    - **Item (1)**
    - **Quantity (2)**
@@ -468,19 +478,19 @@ In this task, you'll create a report to visualize your data findings. You'll sel
 
         ![](./Images/p1t8p7.png)
 
-8. Hide the **Data** and **Filters** panes to create more space if required. Then, make sure the **Table visualization is selected (1)** and in the **Visualizations** pane, change the visualization to a **Clustered bar chart (2)** and resize it as shown here.
+1. Hide the **Data** and **Filters** panes to create more space if required. Then, make sure the **Table visualization is selected (1)** and in the **Visualizations** pane, change the visualization to a **Clustered bar chart (2)** and resize it as shown here.
 
    ![](./Images/p1t8p8.png)
 
    ![Screenshot of a report containing a clustered bar chart.](./Images/E2-T7-S5a.png)
 
-9. On the **File (1)** menu, select **Save As (2)**. Then, name the Report as **Item Sales Report (3)** and click **Save (4)** in the workspace you created previously.
+1. On the **File (1)** menu, select **Save As (2)**. Then, name the Report as **Item Sales Report (3)** and click **Save (4)** in the workspace you created previously.
 
    ![](./Images/p1t8p9.png)
    
    ![](./Images/e1p2t8p9.png)
 
-10. In the hub menu bar on the left, select your workspace to verify that it contains the following items:
+1. In the hub menu bar on the left, select your workspace to verify that it contains the following items:
     - Your lakehouse.
     - The SQL endpoint for your lakehouse.
     - A default dataset for the tables in your lakehouse.
@@ -505,4 +515,4 @@ In this exercise, you:
 
 ### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
-   ![05](./Images/next-page-1208.png)
+   ![](./Images/next-page_01.png)

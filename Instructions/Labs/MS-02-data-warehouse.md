@@ -91,15 +91,21 @@ In this task, you will create database tables by defining their structure with a
 
 1. On the Home menu tab, use the **New SQL Query** button to create a new query for the table.
 
+    ![](./Images/p2t2p4.png)
+
 1. On the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`
 
+    ![](./Images/p2t2p10.png)
+
 1. Open the file **`create-dw-01.txt`** and copy the Transact-SQL code related to the **`DimProduct`** table.
+
+    ![](./Images/img_001.png)
 
 1. Paste the copied code into the new query window.
 
 1. Next, open the files **`create-dw-02.txt`** and **`create-dw-03.txt`**, one after the other, and copy their contents.
 
-   ![](./Images/p2t2p10.png)
+   ![](./Images/img_002.png)
 
 1. Paste the code from both files **below the existing code** in the **same query window**.
 
@@ -193,9 +199,11 @@ In this task, you will create a relational data warehouse consisting of fact and
 
 In this task, you will query data warehouse tables using SQL to retrieve and analyze data. Most queries will involve aggregating and grouping data with functions and GROUP BY clauses, as well as joining related fact and dimension tables using JOIN clauses.
 
-1. Switch back to **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/>** from the top. Create a **New SQL Query** from the top Menu bar, and run the following code:
+1. In the left navigation pane, select the **fabric-<inject key="DeploymentID" enableCopy="false"/> (1)** workspace, then select **Data Warehouse-<inject key="DeploymentID" enableCopy="false"/> (2)** from the list of items.
 
     ![](./Images/p2t4p1.png)
+
+1. Select the **SQL (1)** dropdown in the toolbar, then select **New SQL query (2)**. Copy the following query into the query editor and select **Run (3)** to execute it
 
     ```SQL
    SELECT  d.[Year] AS CalendarYear,
@@ -207,6 +215,8 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
    GROUP BY d.[Year], d.[Month], d.MonthName
    ORDER BY CalendarYear, MonthOfYear;
     ```
+    ![](./Images/img_003.png)
+
     ![](./Images/E3-T4-S1.png)
    
 1. Note that the attributes in the time dimension enable you to aggregate the measures in the fact table at multiple hierarchical levels- in this case, year and month. This is a common pattern in data warehouses.
@@ -214,6 +224,10 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
     ![](./Images/E2T4S2-1108.png)
 
 1. Click on **New SQL Query (1)** from the top menu bar and create a query **(2)** as follows to add a second dimension to the aggregation.
+
+   ![](./Images/img_003.png)
+
+1. Copy the following query into the query editor **(1)**, select **Run (2)** to execute it, and review the results **(3)**:
 
     ```SQL
    SELECT  d.[Year] AS CalendarYear,
@@ -227,10 +241,6 @@ In this task, you will query data warehouse tables using SQL to retrieve and ana
    GROUP BY d.[Year], d.[Month], d.MonthName, c.CountryRegion
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
-
-   ![](./Images/p2t4p3.png)
-
-4. Run the modified query and review the results, which now include Sales Revenue aggregated by Year, Month, and Sales Region.
 
     ![](./Images/p2t4p4.png)
 
@@ -266,6 +276,8 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
    FROM vSalesByRegion
    ORDER BY CalendarYear, MonthOfYear, SalesRegion;
     ```
+
+    ![](./Images/img_004.png)
 
 ## Task 6: Create a visual query
 
@@ -390,4 +402,4 @@ In this exercise, you
 
 ### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
-   ![05](./Images/next-page-1208.png)
+   ![](./Images/next-page_02.png)

@@ -663,6 +663,8 @@ While **matplotlib** enables you to create complex charts of multiple types, it 
 
 1. Run the modified code and note that seaborn enables you to set a consistent color theme for your plots.
 
+    ![](./Images/img_007.png)
+
 1. Modify the code again as follows:
 
     ```Python
@@ -713,4 +715,4 @@ In this exercise, you:
 
 ### You have successfully completed the exercise. Click on **Next >>** to proceed with the next exercise.
 
-   ![05](./Images/next-page-1208.png)
+   ![](./Images/next-page_05.png)
