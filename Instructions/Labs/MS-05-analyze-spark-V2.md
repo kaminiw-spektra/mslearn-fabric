@@ -22,13 +22,16 @@ In this exercise, you will be able to complete the following tasks:
 - Task 4: Explore data in a dataframe
 - Task 5: Aggregate and group data in a dataframe
 - Task 6: Use Spark to transform data files
+
   - Task 6.1: Use dataframe methods and functions to transform data
   - Task 6.2: Save the transformed data
   - Task 6.3: Save data in partitioned files
 - Task 7: Work with tables and SQL
+
   - Task 7.1: Create a table
   - Task 7.2: Run SQL code in a cell
 - Task 8: Visualize data with Spark
+
   - Task 8.1: View results as a chart
   - Task 8.2: Get started with **matplotlib**
   - Task 8.3: Use the **seaborn** library
