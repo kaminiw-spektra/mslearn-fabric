@@ -98,7 +98,7 @@ In this task, you will use Kusto Query Language (KQL) to analyze the sales data 
 1. Modify the query as follows:
 
     ```kusto
-   ['sales ']
+   ['sales']
    | where Item == 'Road-250 Black, 48'
     ```
 
@@ -109,7 +109,7 @@ In this task, you will use Kusto Query Language (KQL) to analyze the sales data 
 1. Modify the query as follows:
 
     ```kusto
-   ['sales ']
+   ['sales']
    | where Item == 'Road-250 Black, 48'
    | where datetime_part('year', OrderDate) > 2020
     ```
@@ -121,7 +121,7 @@ In this task, you will use Kusto Query Language (KQL) to analyze the sales data 
 1. Modify the query as follows:
 
     ```kusto
-   ['sales ']
+   ['sales']
    | where OrderDate between (datetime(2020-01-01 00:00:00) .. datetime(2020-12-31 23:59:59))
    | summarize TotalNetRevenue = sum(UnitPrice) by Item
    | sort by Item asc
