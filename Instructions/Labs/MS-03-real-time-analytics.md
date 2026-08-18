@@ -121,10 +121,10 @@ In this task, you will use Kusto Query Language (KQL) to analyze the sales data 
 1. Modify the query as follows:
 
     ```kusto
-   ['sales']
-   | where OrderDate between (datetime(2020-01-01 00:00:00) .. datetime(2020-12-31 23:59:59))
-   | summarize TotalNetRevenue = sum(UnitPrice) by Item
-   | sort by Item asc
+    ['sales']
+    | where OrderDate between (datetime(2020-01-01) .. datetime(2020-12-31 23:59:59)) 
+    | summarize TotalRevenue = sum(UnitPrice * Quantity) by Item
+    | sort by Item asc 
     ```
 
 1. Run the query and review the results, which should contain the total net revenue for each product between January 1st and December 31st, 2020, in ascending order of product name.
