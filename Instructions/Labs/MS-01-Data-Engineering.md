@@ -29,9 +29,9 @@ In this exercise, you will be able to complete the following tasks:
 
 In this task, you will initiate your 60-day free trial of Microsoft Fabric by signing up through the Fabric app, providing access to its comprehensive suite of data integration, analytics, and visualization tools
 
-1. On the **Power BI homepage**, click on the **Profile icon (1)** on the top right, and then click on **Trial_Section_Button_section (2)**.
+1. In the top right corner of the screen, select the **User icon**. Select **Start trial (1)** and click on **Fabric and PowerBI (2)**.
 
-    ![Account-manager-start](./Images/01/E1T1S1.png)
+    ![Account-manager-start](./Images/E1T1S1-new.png)
 
 1. On the **Activate your 60-day free Fabric trial capacity** dialog box, click **Activate**.  
 
@@ -43,9 +43,9 @@ In this task, you will initiate your 60-day free trial of Microsoft Fabric by si
     >   ![](./Images/img_005.png)
     >
 
-1. On the **Successfully upgraded to Microsoft Fabric** pop-up, click **OK**.
+1. On the **Your Fabric and Power BI trials are active** pop-up, click **OK**.
 
-    ![](./Images/p1t1p3.png)
+    ![](./Images/E1T1S3.png)
 
 1. Close the **Invite teammates to try Fabric to extend your trial** pop-up.
 
@@ -293,9 +293,9 @@ In this task, you'll create a Notebook to document your data analysis. You'll se
 
     ![](./Images/01/E1T5S5.png)  
 
-1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Add (2)**.
+1. Select the previously created **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** then click **Connect (2)**.
  
-    ![](./Images/img-15.png) 
+    ![](./Images/E1T5S6.png) 
 
 1. Select the existing cell in the notebook, clear the default code, and replace it with the **variable declaration (1)** below. Then click **&#9655; Run (2)** to execute the cell.
 
@@ -400,9 +400,9 @@ In this task, you'll use SQL to query tables in a database. You'll write stateme
 
 In this task, you'll create a visual query in Power BI using Power Query. Start by adding the Sales table to the query editor, select the necessary columns, and applying a Group By transformation to count distinct line items per sales order. Then, review the summarized results.
 
-1. On the toolbar under **New SQL query (1)** drop-down select **New visual query (2)**.
+1. On the toolbar under **New SQL query** drop-down select **New visual query**.
 
-    ![](./Images/p1t7p1.png)
+    ![](./Images/E1T7S1-new.png)
 
 1. In the Lakehouse, navigate to **Schemas**, then to **dbo**, expand the **Tables** folder and select the **sales** table. In the sales table, click on **Ellipsis &#8230; (1)** and select **Insert into canvas (2)**. It is in the new visual query editor pane that opens to create a Power Query. 
 

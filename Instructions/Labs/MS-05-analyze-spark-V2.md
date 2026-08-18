@@ -99,7 +99,7 @@ In this task, you will create a notebook to work with data in Apache Spark. Note
 
     ![](./Images/01/E1T5S5.png)  
 
-1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** from the options and click on **Add (2)**.
+1. Select **fabric_lakehouse<inject key="DeploymentID" enableCopy="false"/>** from the options and click on **Connect**.
     
     ![](./Images/E5T2S5.png)
 

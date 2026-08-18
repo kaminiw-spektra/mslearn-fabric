@@ -72,9 +72,9 @@ In this task, you will create database tables by defining their structure with a
 
    ![](./Images/p2t2p3.png)
 
-1. On the **Home** menu tab, use the **New SQL Query (1)** button and from the drop-down select **New SQL Query (2)**  to create a new query, and enter the following INSERT statement:
+1. On the **Home** menu tab, use the **New SQL Query** button and from the drop-down select **New SQL Query**  to create a new query, and enter the following INSERT statement:
 
-    ![](./Images/p2t2p4.png)
+    ![](./Images/E2T2S4.png)
 
     ```SQL
    INSERT INTO dbo.DimProduct
@@ -91,7 +91,7 @@ In this task, you will create database tables by defining their structure with a
 
 1. On the Home menu tab, use the **New SQL Query** button to create a new query for the table.
 
-    ![](./Images/p2t2p4.png)
+    ![](./Images/E2T2S4.png)
 
 1. On the **Lab VM** and navigate to the following path: `C:\LabFiles\Files\`
 
@@ -184,7 +184,11 @@ In this task, you will create a relational data warehouse consisting of fact and
          
        ![](./Images/E2T3S4.2-1108.png)
 
-1. When all of the relationships have been defined, the model should look like this:
+1. When all of the relationships have been defined, close the dialog box.
+
+    ![](./Images/E2T3S11.png)
+
+1. The model should look like this: 
 
     ![Screenshot of the model with relationships.](./Images/dw-relationships-1.png)
 
@@ -283,9 +287,9 @@ In this task, you will create a view in the data warehouse to encapsulate SQL lo
 
 In this task, you will create a visual query using the graphical query designer to query data warehouse tables without writing SQL code. Similar to Power Query online, this no-code approach allows you to perform data transformations, and for more complex tasks, you can leverage Power Query's M language.
 
-1. On the **Home** menu, select **New visual query (2)** from the **New SQL Query (1)** drop-down.
+1. On the **Home** menu, select **New visual query** from the **New SQL Query** drop-down.
 
-    ![](./Images/p2t6p1.png)
+    ![](./Images/E2T2S4.png)
 
 1. From Tables, drag **FactSalesOrder** onto the **canvas**. Notice that a preview of the table is displayed in the **Preview** pane below.
 
@@ -360,11 +364,11 @@ In this task, you will visualize your data from a single query or your data ware
 
     ![](./Images/E2T7S4.png)
 
-1. Select **Category**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **column chart**.
+1. Select **Category**. This will add the column to the **Report canvas**. Because the column is a numeric value, the default visual is a **table**.
 
-    ![](./Images/E2T7S5.png)
+    ![](./Images/E2T7S7-new.png)
 
-1. Ensure that the column chart on the canvas is active (with a grey border and handles), and then select **SalesTotal** from the **FactSalesOrder** table to add a category to your column chart.
+1. Ensure that the table on the canvas is active (with a grey border and handles), and then select **SalesTotal** from the **FactSalesOrder** table to add a category to your column chart.
 
     ![](./Images/e2p3t7p8.png)
 

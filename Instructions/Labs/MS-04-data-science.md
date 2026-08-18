@@ -89,9 +89,9 @@ In this task, you will load data into a dataframe to prepare for model training.
     ![](./Images/01/E1T5S5.png)  
 
 
-2. Select the lakehouse named **Lakehouse_<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Add (2)**.
+2. Select the lakehouse named **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** and click **Connect**.
  
-    ![](./Images/img-15.png) 
+    ![](./Images/E4T3S2.png) 
 
 3. Once after connecting to the existing lakehouse, we should be able to see the **Lakehouse_<inject key="DeploymentID" enableCopy="false"/>** under **Data Items**.
    
